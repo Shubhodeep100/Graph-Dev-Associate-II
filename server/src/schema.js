@@ -29,6 +29,19 @@ const typeDefs = gql`
     "Author's profile picture"
     photo: String
   }
+
+  type spaceCats {
+    id: ID!
+    name: String!
+    age: Int
+    missions: [Mission]
+  }
+
+  type Mission {
+    id: ID!
+    name: String!
+    description: String!
+  }
 `;
 
 module.exports = typeDefs;
