@@ -12,6 +12,8 @@ const resolvers = {
             return dataSources.trackAPI.getAuthor(authorId);
         },
     }
+
+    
 };
 
 export default resolvers;
